@@ -94,3 +94,11 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias relay='~/bin/relay_auto_login/relay'
 alias ll='ls -Gl'
+
+#开启颜色
+autoload -U colors && colors
+#配置提示符模式。。 其实配置之前的PS1也是可以的 但是为了尊重说明文档。。。
+#PROMPT="%{$fg[blue]%}%n%{$reset_color%}@%{$fg[green]%}%M:%{$fg[yellow]%}%d "
+PROMPT="%{$fg[blue]%}%n@%{$fg[green]%}%M:%{$fg[yellow]%}%d%{$reset_color%} "
+#在行末显示上一命令的返回状态
+#RPROMPT="[%{$fg_bold[yellow]%}%?%{$reset_color%}]
